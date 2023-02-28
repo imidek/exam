@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kolano</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Badanie kolana</h1>
+
+  <div class="rom">
+    <label for="wyprost">wyprost (0):</label>
+    <input type="range" id="wyprost" step="5" min="-20" max="140" value="0">
+    <p class="romRes">- zbadaj -</p>
+
+    <label for="zgiecie">zgięcie (140):</label>
+    <input type="range" id="zgiecie" step="5" min="0" max="140" value="140">
+    <p class="romRes">- zbadaj -</p>
+  </div>
+
+  <div class="tkliwosc">
+    Tkliwość:
+    <label for="ant">przód</label>
+    <input type="checkbox" name="przód" value="przód">
+
+ 
+    <label for="przysrodek">przyśrodek</label>
+    <input type="checkbox" name="przysrodek" value="przysrodek">
+
+    <label for="bok">bok</label>
+    <input type="checkbox" name="bok" value="bok">
+
+    <label for="tył">tył</label>
+    <input type="checkbox" name="tył" value="tył">
+
+    <label for="rzepka">rzepka</label>
+    <input type="checkbox" name="rzepka" value="rzepka">
+    
+    <label for="wiezadlo">więzadło rzepki</label>
+    <input type="checkbox" name="wiezadlo" value="więzadło rzepki">
+
+    <label for="biegun">biegun górny rzepki</label>
+    <input type="checkbox" name="biegun" value="biegun górny rzepki">
+
+    <label for="przód">przód</label>
+    <input type="checkbox" name="przód" value="przód">
+
+    <label for="przód">przód</label>
+    <input type="checkbox" name="przód" value="przód">
+
+    <button class="palpacja">wynik</button>
+    <p class="opis"></p>
+    
+  </div>
+
+
+
+  <div class="result">
+    <p class="wyniki"></p>
+    <button>Wyniki</button>
+  </div>
+  <script src="knee.js"></script>
+</body>
+
+</html>

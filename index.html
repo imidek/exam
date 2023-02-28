@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a href="/knee.html">Badanie kolana</a>
+
+  <form class="rom">
+    
+  <label for="wyprost">Wyprost (0):</label>
+  <input class="range" type="range" id="wyprost" name="wyprost" min="-10" max="140" step="5" value="0">
+  <p id="p1"></p>
+
+  <label for="zgięcie">Zgięcie (140):</label>
+  <input class="range" type="range" id="zgięcie" name="zgięcie" min="-10" max="140" step="5" value="140">
+  <p id="p2"></p>
+
+  <p class="romki">ROM: 0-140</p>
+  <button id="romowie">ddodaj wynik badania</button>
+
+  </form>
+
+  <form class="exam">
+    <h3>Balotowanie kolana:</h3>
+    <label><input class="balotowanie" type="checkbox" name="location" value="tak">tak</label><br>
+    <label><input class="balotowanie" type="checkbox" name="location" value="nie">nie</label><br>
+    <label><input class="balotowanie" type="checkbox" name="location" value="porównywalne ze stroną przeciwną">porównywalne ze stroną przeciwną</label><br>
+    
+    
+    <!-- <label><input class="instability" type="checkbox" name="location" value="bez cech niestabilności">bez cech niestabilności</label><br> -->
+
+    <p class="balotowanieResults"></p>
+
+    <button class="balotowanieButtonShow">pokaż wyniki</button>
+    <button class="refresh">odśwież</button>
+  </form>
+  
+  <form class="exam">
+    <h3>Tkliwość palpacyjna</h3>
+    <label><input class="pain" type="checkbox" name="location" value="przód">przód</label><br>
+		<label><input class="pain" type="checkbox" name="location" value="tył">tył</label><br>
+		<label><input class="pain" type="checkbox" name="location" value="przyśrodek">przyśrodek</label><br>
+		<label><input class="pain" type="checkbox" name="location" value="bok">bok</label><br>
+		<label><input class="pain" type="checkbox" name="location" value="więzadło rzepki">więzadło rzepki</label><br>
+		<label><input class="pain" type="checkbox" name="location" value="biegun górny rzepki">biegun górny rzepki</label><br>
+		<label><input class="pain" type="checkbox" name="location" value="okolica gęsiej stopy">okolica gęsiej stopy</label><br>
+		<label><input class="pain" type="checkbox" name="location" value="bez tkliwości palpacyjnej">bez tkliwości palpacyjnej</label><br>
+
+		<!-- <label><input class="pain" type="checkbox" name="location" value="shoulder">Shoulder</label><br> -->
+
+    <p class="painResults"></p>
+
+    <button class="painButtonShow">pokaż wyniki</button>
+    <button class="refresh">odśwież</button>
+  </form>
+
+  <form class="exam">
+    <h3>Ocena stabilności kolana</h3>
+    <label><input class="instability" type="checkbox" name="location" value="cechy niestabilności przedniej">cechy niestabilności przedniej</label><br>
+		<label><input class="instability" type="checkbox" name="location" value="cechy niestabilności tylnej">cechy niestabilności tylnej</label><br>
+		<label><input class="instability" type="checkbox" name="location" value="cechy niestabilności przyśrodkowej">cechy niestabilności przyśrodkowej</label><br>
+		<label><input class="instability" type="checkbox" name="location" value="cechy niestabilności bocznej">cechy niestabilności bocznej</label><br>
+		<label><input class="instability" type="checkbox" name="location" value="kolano stabilne">kolano stabilne</label><br>
+		<label><input class="instability" type="checkbox" name="location" value="ocena niemożliwa ze względu na dolegliwości bólowe">ocena niemożliwa ze względu na dolegliwości bólowe</label><br>
+		<label><input class="instability" type="checkbox" name="location" value="ocena niemożliwa ze względu na wzmożone napięcie mięśniowe">ocena niemożliwa ze względu na wzmożone napięcie mięśniowe</label><br>
+		
+		<!-- <label><input class="instability" type="checkbox" name="location" value="bez cech niestabilności">bez cech niestabilności</label><br> -->
+
+    <p class="instabilityResults"></p>
+
+    <button class="instabilityButtonShow">pokaż wyniki</button>
+    <button class="refresh">odśwież</button>
+  </form>
+
+
+  <div>
+    <p>Wynik: </p>
+    <p class="results"> </p>
+  </div>
+  
+
+ 
+  <script src="app.js"></script>
+</body>
+</html>
